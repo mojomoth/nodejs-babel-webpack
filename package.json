@@ -5,9 +5,10 @@
   "scripts": {
     "clean": "rm -rf build",
     "build": "webpack --config webpack.config.babel.js",
-    "start": "nodemon build/app.js",
+    "start": "node build/app.js",
+    "demon": "nodemon build/app.js",
     "watch": "webpack --watch",
-    "dev": "npm-run-all build --parallel watch start"
+    "dev": "npm-run-all build --parallel watch demon"
   },
   "author": "mojomoth",
   "license": "ISC",
