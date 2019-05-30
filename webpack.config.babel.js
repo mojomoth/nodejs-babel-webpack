@@ -21,6 +21,9 @@ module.exports = {
     }),
   ],
   resolve: {
-    modules: ['node_modules'],
+    modules: [
+      path.join(__dirname),
+      'node_modules'
+    ],
   },
 };
